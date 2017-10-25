@@ -1,0 +1,53 @@
+[user]
+	name = Armann David Sigurdsson
+	email = armannds@gmail.com
+
+[credential]
+	helper = osxkeychain
+
+[github]
+  user = armannds
+
+[core]
+  editor = code
+
+[alias]
+  st = status
+  sts = status -sb
+  cm = commit
+  br = branch
+  ch = checkout
+  cl = clone --recursive
+  df = diff --word-diff
+  unstage = reset --hard HEAD
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ll = log --pretty=oneline --graph --abbrev-commit
+  lm = log --pretty=format:'* %s (%h)'
+  lg = log -p
+  amend = commit --amend --reuse-message=HEAD
+  contrib = shortlog --summary --numbered
+
+[color]
+  ui = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+  
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
