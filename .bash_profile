@@ -2,6 +2,10 @@
 export PATH="/usr/local/bin:$PATH"
 # Add `~/bin` to $PATH
 export PATH="$HOME/bin:$PATH";
+# Add npm to $PATH
+export PATH=/usr/local/share/npm/bin:$PATH
+
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # Load shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
